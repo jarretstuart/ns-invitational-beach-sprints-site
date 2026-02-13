@@ -215,23 +215,18 @@ a:hover {
 }
 
 .hero {
-  padding: 80px 0 60px;
-  background: var(--hero-bg);
-  background-image: var(--hero-pattern);
-  background-size: 20px 20px;
-  color: #FFFFFF;
-  margin-bottom: 42px;
+  padding: 64px 0 42px;
+  background: #EBF1F9;
+  text-align: center;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.25fr .85fr;
-  gap: 42px;
-  align-items: start;
+.hero-centered {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .hero-copy {
-  text-align: left;
+  margin: 0 auto;
 }
 
 .hero-copy h1 {
@@ -240,14 +235,14 @@ a:hover {
   line-height: 1.1;
   letter-spacing: -1.2px;
   font-weight: 800;
-  color: #FFFFFF;
+  color: var(--text);
 }
 
 .lead {
-  margin: 0 0 32px;
-  color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto 24px;
+  color: var(--muted);
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.5;
   max-width: 720px;
 }
 
@@ -295,9 +290,9 @@ a:hover {
 .cta-row {
   display: flex;
   gap: 12px;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 24px 0 12px;
+  margin: 12px 0 10px;
 }
 
 .button {

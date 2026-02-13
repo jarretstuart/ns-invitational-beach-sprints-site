@@ -6,10 +6,12 @@ This document serves as the "Source of Truth" for any AI agent or developer work
 
 | Element | Hex Code | Usage |
 | :--- | :--- | :--- |
-| **Primary Blue** | `#117BA9` | Main brand color, primary buttons, accents. |
-| **Background / Surface** | `#FCFCFC` | Page background, card surfaces. |
-| **Dark Neutral** | `#2D3748` | Main text, dark background sections. |
-| **Pure White** | `#FFFFFF` | Text on dark backgrounds, secondary card surfaces. |
+| **Primary Blue** | `#00639B` | Main brand color, primary buttons, accents. |
+| **Background / Surface** | `#F0F4F8` | Page background. |
+| **Card Surface** | `#FFFFFF` | Cards and panels. |
+| **Dark Neutral** | `#1A1C1E` | Main text. |
+| **Muted Text** | `#43474E` | Secondary text. |
+| **Hero Background** | `#EBF1F9` | Hero section background. |
 
 ## Typography
 
@@ -28,6 +30,6 @@ This document serves as the "Source of Truth" for any AI agent or developer work
 
 ## Project Layout
 
-- **Hero Section**: 2-column grid (`1.25fr .85fr`) for desktop, stacked for mobile.
-- **Components**: Cards should have a hover lift effect and subtle border highlight.
+- **Hero Section**: Centered single-column layout. High focus on the logo and primary CTA.
+- **Quick Facts**: Dedicated section below the hero for density and clarity.
 - **Partners**: Logos should be presented with a monochromatic (grayscale) base that restores to color on hover for a sophisticated look.
