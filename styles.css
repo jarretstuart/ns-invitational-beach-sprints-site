@@ -249,8 +249,8 @@ a:hover {
 .hero-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin: 18px 0 14px;
+  gap: 16px;
+  margin: 32px 0 24px;
 }
 
 .card {
@@ -290,6 +290,7 @@ a:hover {
 .cta-row {
   display: flex;
   gap: 12px;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 12px 0 10px;
 }
