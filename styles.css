@@ -4,6 +4,11 @@
 :root {
   /* Material 3 Light Theme Tokens (Coastal Palette) */
   --bg: #F0F4F8;
+  /* Base Surface */
+  --hero-bg: linear-gradient(135deg, #004d7a 0%, #00639B 100%);
+  /* Deep Ocean Blue */
+  --hero-pattern: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  /* Subtle texture */
   /* Surface (Slightly darker for card contrast) */
   --panel: #F2F6FC;
   /* Surface Container Low */
@@ -189,6 +194,14 @@ a:hover {
 .mobile-nav {
   border-top: 1px solid var(--border);
   padding: 10px 0 18px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-nav:not([hidden]) {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .mobile-nav a {
@@ -204,7 +217,12 @@ a:hover {
 }
 
 .hero {
-  padding: 56px 0 32px;
+  padding: 80px 0 60px;
+  background: var(--hero-bg);
+  background-image: var(--hero-pattern), var(--hero-bg);
+  background-size: 20px 20px, 100% 100%;
+  color: #FFFFFF;
+  margin-bottom: 42px;
 }
 
 .hero-grid {
@@ -215,16 +233,19 @@ a:hover {
 }
 
 .hero-copy h1 {
-  margin: 0 0 12px;
-  font-size: clamp(28px, 4vw, 44px);
-  line-height: 1.12;
-  letter-spacing: -0.5px;
+  margin: 0 0 16px;
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #FFFFFF;
 }
 
 .lead {
-  margin: 0 0 18px;
-  color: var(--muted);
-  font-size: 17px;
+  margin: 0 0 24px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 600px;
 }
 
 .hero-cards {
@@ -515,6 +536,50 @@ a:hover {
 
 tr:last-child td {
   border-bottom: none;
+}
+
+.table tbody tr:hover td {
+  background: rgba(0, 99, 155, 0.04);
+  /* Subtle hover highlight */
+  transition: background 0.2s ease;
+}
+
+/* Partners Section */
+.partners {
+  padding: 24px 0 42px;
+  background: #FFFFFF;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.partners-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.partner-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #8da3b6;
+  /* Muted placeholder */
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.partner-name:hover {
+  color: var(--accent);
+  /* Brand color on hover */
 }
 
 
