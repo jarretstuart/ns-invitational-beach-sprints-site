@@ -213,27 +213,37 @@ a:hover {
 }
 
 .hero {
-  padding: 56px 0 32px;
+  padding: 64px 0 42px;
+  background: #EBF1F9;
+  /* Clean light-blue-grey to match screenshot */
+  text-align: center;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.25fr .85fr;
-  gap: 28px;
-  align-items: start;
+.hero-centered {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-copy {
+  margin: 0 auto;
 }
 
 .hero-copy h1 {
-  margin: 0 0 12px;
-  font-size: clamp(28px, 4vw, 44px);
-  line-height: 1.12;
-  letter-spacing: -0.5px;
+  margin: 0 0 16px;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+  font-weight: 800;
+  /* Bold, chunky feel */
+  color: var(--text);
 }
 
 .lead {
-  margin: 0 0 18px;
+  margin: 0 auto 24px;
   color: var(--muted);
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 720px;
 }
 
 .hero-cards {
