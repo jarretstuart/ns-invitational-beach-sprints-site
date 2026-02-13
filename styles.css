@@ -3,7 +3,7 @@
 
 :root {
   /* Material 3 Light Theme Tokens (Coastal Palette) */
-  --bg: #FCFCFC;
+  --bg: #F0F4F8;
   /* Base Surface */
   /* Surface (Slightly darker for card contrast) */
   --panel: #F8FAFC;
@@ -11,13 +11,13 @@
   /* Surface Container Low */
   --panel2: #FFFFFF;
   /* Surface Container High */
-  --text: #2D3748;
+  --text: #1A1C1E;
   /* On Surface */
-  --muted: #4A5568;
+  --muted: #43474E;
   /* On Surface Variant */
 
   /* Primary: Ocean Blue */
-  --accent: #117BA9;
+  --accent: #00639B;
   /* Primary */
   --on-accent: #FFFFFF;
   /* On Primary */
@@ -31,9 +31,6 @@
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
 
-  /* Hero Specifics */
-  --hero-bg: linear-gradient(135deg, #117BA9 0%, #084C69 100%);
-  --hero-pattern: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
 
   --radius: 24px;
   /* M3 Rounded Corners */
