@@ -567,18 +567,28 @@ tr:last-child td {
   align-items: center;
 }
 
-.partner-name {
-  font-size: 20px;
-  font-weight: 700;
-  color: #8da3b6;
-  /* Muted placeholder */
-  transition: color 0.3s ease;
-  cursor: default;
+.partner-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.partner-name:hover {
-  color: var(--accent);
-  /* Brand color on hover */
+.partner-link:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.partner-link img {
+  max-height: 48px;
+  width: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.partner-link:hover img {
+  filter: grayscale(0%);
 }
 
 
