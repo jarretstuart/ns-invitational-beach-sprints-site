@@ -727,3 +727,7 @@ tr:last-child td {
     flex-direction: column;
   }
 }
+
+/* Partner logos visibility */
+.partner-link { opacity: 1; }
+.partner-link img { filter: none; }
